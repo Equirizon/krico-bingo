@@ -1,0 +1,32 @@
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .bingo-card {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+        height: 30rem;
+        width: 30rem;
+        margin: 0 auto;
+        padding: 10px;
+        border: 2px solid #333;
+        border-radius: 10px;
+    }
+    .cell {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+        min-width: 0;
+        overflow: hidden;
+        
+    }
+
+    .cell.clicked {
+        background-color: #a0a0a0; /* Change the background color when clicked */
+    }
+
+    .free {
+        background-color: #90ee90;
+        font-weight: bold;
+    }
